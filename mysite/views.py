@@ -18,8 +18,8 @@ def index(request):
         context = {'joker': joke}
         return render(request, 'mysite/index.html', context)
     else:
-        firstname = 'Moon'
-        lastname = 'Light'
+        firstname = 'Iron'
+        lastname = 'Man'
 
         r = requests.get('http://api.icndb.com/jokes/random?firstName=' + firstname + '&lastName=' + lastname)
         json_data = json.loads(r.text)
